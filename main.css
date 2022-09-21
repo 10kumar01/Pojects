@@ -1,0 +1,231 @@
+/* body{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} */
+
+button{
+    border: none;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    border-width: 2px;
+    
+}
+
+.Binbtn{
+    background-color: rgb(184, 67, 37);
+    color:rgb(223, 201, 11);
+    width: 100%;
+    height: 100%;
+    font-size: 2vw;
+    border-radius: 50%;
+    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.8);
+}
+.DecBtn{
+    background-color: rgb(70, 153, 45);
+    color:rgb(29, 75, 15);
+    width: 100%;
+    height: 16vh;
+    font-size: 3vw;
+    border-radius: 50%;
+    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.8);
+}
+.HexBtn{
+    display: inline-block;
+    background-color: rgb(195, 157, 52);
+    color:red;
+    width: 80%;
+    height: 12vh;
+    font-size:3vw;
+    border-radius: 20%;
+    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.8);
+}
+.ZeroOne{
+    display: inline-block;
+    background-color: rgb(230, 123, 123);
+    color:rgb(126, 5, 5);
+    width: 100%;
+    height: 20vh;
+    font-size: 5vw;
+    border-radius: 50%;
+    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.8);
+}
+.Optrs{
+    background-color: rgb(221, 193, 71);
+    color:rgb(148, 26, 12);
+    width: 100%;
+    height: 8vh;
+    font-size: 2vw;
+    border-radius: 20%;
+    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.8);
+}
+.Back{
+    display: inline-block;
+    background-color: rgb(184, 67, 37);
+    color:rgb(223, 201, 11);
+    width: 100%;
+    height: 8vh;
+    text-align: center;
+    font-size: 1vw;
+    font-weight: bolder;
+    border-radius: 50%;
+    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.8);
+}
+.Binbtn:hover{
+    background-color: rgb(216, 81, 47);
+}
+.Binbtn:active{
+    background-color: rgb(149, 51, 26);
+    color: whitesmoke;
+    transform:scale(0.8);
+}
+.Back:hover{
+    background-color: rgb(207, 77, 44);
+}
+.Back:active{
+    background-color: rgb(155, 54, 29);
+    color: whitesmoke;
+    transform:scale(0.8);
+}
+.DecBtn:hover{
+    background-color: rgb(88, 190, 57);
+}
+.DecBtn:active{
+    background-color: rgb(46, 116, 25);;
+    color: whitesmoke;
+    transform:scale(0.8);
+}
+.HexBtn:hover{
+    background-color: rgb(216, 177, 71);
+}
+.HexBtn:active{
+    background-color: rgb(161, 132, 51);
+    color: whitesmoke;
+    transform:scale(0.8);
+}
+.ZeroOne:hover{
+    background-color: rgb(248, 144, 144);
+}
+.ZeroOne:active{
+    background-color: rgb(197, 108, 108);
+    color: whitesmoke;
+    transform:scale(0.8);
+}
+.Optrs:hover{
+    background-color: rgb(238, 211, 89);
+}
+.Optrs:active{
+    background-color: rgb(192, 167, 57);
+    color: whitesmoke;
+    transform:scale(0.8);
+}
+
+.div_ConvertTo{
+    margin-left:1%;
+    margin-top: 10px;
+    float: left;
+    background-color:rgb(142, 241, 155);
+    width: 30%;
+    height: 80%;
+    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.8); 
+}
+.div_ConvertFrom{
+    background-color: thistle;
+    width: 30%;
+    height: 80%;
+    margin-left:30%;
+    margin-top:10px;
+    float: left;
+    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.8);
+}
+
+.div_NumPad{
+    background-color: rgb(246, 83, 83);
+}
+.div_OctPad{
+    background-color: rgb(61, 207, 122);
+}
+.div_BinPad{
+    background-color: rgb(4, 125, 195);
+}
+.div_HexPad{
+    background-color: rgb(101, 129, 223);
+}
+
+.div_BinPad,.div_HexPad,.div_NumPad,.div_OctPad{
+    width: 30%;
+    height: 80%;
+    margin-left:30%;
+    margin-top:10px;
+    float: left;
+    display:none;
+    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.8);
+}
+.Result{
+    background-color: rgb(82, 185, 226);
+    width: 65%;
+    height: 10%;
+    font-size:4vw;
+    text-align:right;
+    margin-left:27.5%;
+    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.8);
+    display: block;
+}
+.Main_Container
+{
+    width: 100vw;
+    height:100vh;
+    background-color: tomato;
+    margin-top:-10%;
+    margin-left:-10%;
+    min-width: 200px;
+
+}
+h1{
+    font-size: 50px;
+}
+header{
+    width: 100%;
+    margin-bottom: 12%;
+    height:5vw;
+    font-size:5vw;
+    color:whitesmoke;
+    padding-bottom:1% ;
+    text-align:center;
+    background-color: rgb(16, 141, 190);
+    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.8);
+}
+.NoteBox{
+        background-color: rgba(88, 173, 124, 0.945);
+        width: 180px;
+        color:whitesmoke;
+        height: 400px;
+        margin-left: 900px;
+        margin-top: -425px;
+        display:block;
+        box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.8);
+    }
+@media only screen and (max-width:765px){
+    .Main_Container,.div_ConvertFrom,.div_ConvertTo{
+     overflow: hidden;   
+    }
+}
+.Num_table{
+    width: 90%;
+    height: 70%;
+    margin-left:5%;
+    margin-top:1%;
+    padding-top:5%;
+    text-align: center;
+}
+
+.Optr_table{
+    width: 80%;
+    height: 10%;
+    margin-top:5.0%;
+    margin-left:1%;
+}
+td{
+    border:2px solid #eee;
+}
